@@ -77,6 +77,7 @@ Open {{< langfile >}} and replace the contents with the following:
 {{% choosable language javascript %}}
 
 ```javascript
+const pulumi = require("@pulumi/pulumi");
 const aws = require("@pulumi/aws");
 
 let size = "t2.micro";     // t2.micro is available in the AWS free tier
@@ -109,6 +110,7 @@ exports.publicHostName = server.publicDns;
 {{% choosable language typescript %}}
 
 ```typescript
+import * as pulumi from "@pulumi/pulumi";
 import * as aws from "@pulumi/aws";
 
 const size = "t2.micro";     // t2.micro is available in the AWS free tier
